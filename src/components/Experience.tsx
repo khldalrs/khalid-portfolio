@@ -37,11 +37,11 @@ const Experience = () => {
 
   return (
     <section id="experience" className="py-20 bg-background text-foreground">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-12">Experience</h2>
+      <div className="max-w-4xl mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-12">Experience<span className="text-primary">.</span></h2>
         <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <div key={index} className="animate-slide-in border border-muted/20 rounded-lg p-6 hover:border-primary/50 transition-colors">
+            <div key={index} className="animate-slide-in border border-muted/20 rounded-lg p-6 hover:border-primary transition-colors">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <h3 className="text-xl font-semibold">{exp.title}</h3>
                 <span className="text-muted-foreground">{exp.date}</span>

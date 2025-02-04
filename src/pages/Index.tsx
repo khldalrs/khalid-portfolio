@@ -8,12 +8,14 @@ import Contact from "@/components/Contact";
 const Index = () => {
   return (
     <div className="bg-background min-h-screen">
-      <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <div className="max-w-6xl mx-auto">
+        <Navbar />
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 };
