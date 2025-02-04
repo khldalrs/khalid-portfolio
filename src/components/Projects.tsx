@@ -57,6 +57,32 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold mb-8">Technical Skills</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Languages</h3>
+              <ul className="text-muted-foreground space-y-2">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Technologies</h3>
+              <ul className="text-muted-foreground space-y-2">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>AWS</li>
+                <li>MongoDB</li>
+                <li>Express.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
