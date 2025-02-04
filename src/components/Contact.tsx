@@ -33,7 +33,7 @@ const Contact = () => {
                 </button>
               </div>
               <a
-                href="https://github.com"
+                href="https://github.com/khldalrs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-foreground hover:text-primary transition-colors"
@@ -42,7 +42,7 @@ const Contact = () => {
                 <span>GitHub</span>
               </a>
               <a
-                href="https://linkedin.com"
+                href="www.linkedin.com/in/khalidalrais/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-foreground hover:text-primary transition-colors"
