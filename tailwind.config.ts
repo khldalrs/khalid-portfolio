@@ -22,23 +22,23 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "#1A1F2C",
+        background: "#000000",
         foreground: "#FFFFFF",
         primary: {
-          DEFAULT: "#9b87f5",
-          foreground: "#FFFFFF",
+          DEFAULT: "#FEF7CD",
+          foreground: "#000000",
         },
         secondary: {
-          DEFAULT: "#7E69AB",
+          DEFAULT: "#F97316",
           foreground: "#FFFFFF",
         },
         muted: {
-          DEFAULT: "#8E9196",
-          foreground: "#C8C8C9",
+          DEFAULT: "#666666",
+          foreground: "#999999",
         },
         accent: {
-          DEFAULT: "#33C3F0",
-          foreground: "#FFFFFF",
+          DEFAULT: "#F97316",
+          foreground: "#000000",
         },
       },
       fontFamily: {
@@ -47,6 +47,7 @@ export default {
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
         "slide-in": "slideIn 0.5s ease-out",
+        "float": "float 3s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
@@ -56,6 +57,10 @@ export default {
         slideIn: {
           "0%": { transform: "translateY(20px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
     },

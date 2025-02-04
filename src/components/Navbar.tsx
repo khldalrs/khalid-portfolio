@@ -17,15 +17,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : "bg-transparent"}`}>
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-foreground">Khalid Alrais</span>
-          <div className="hidden md:flex space-x-8">
-            <button onClick={() => scrollTo("about")} className="text-foreground hover:text-primary transition-colors">About</button>
-            <button onClick={() => scrollTo("experience")} className="text-foreground hover:text-primary transition-colors">Experience</button>
-            <button onClick={() => scrollTo("contact")} className="text-foreground hover:text-primary transition-colors">Contact</button>
-          </div>
+    <nav className={`fixed top-0 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${isScrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : "bg-transparent"}`}>
+      <div className="px-6 py-4">
+        <div className="flex items-center justify-center space-x-8">
+          <button onClick={() => scrollTo("about")} className="text-foreground hover:text-accent transition-colors">About</button>
+          <button onClick={() => scrollTo("experience")} className="text-foreground hover:text-accent transition-colors">Experience</button>
+          <button onClick={() => scrollTo("projects")} className="text-foreground hover:text-accent transition-colors">Projects</button>
+          <button onClick={() => scrollTo("contact")} className="text-foreground hover:text-accent transition-colors">Contact</button>
         </div>
       </div>
     </nav>
