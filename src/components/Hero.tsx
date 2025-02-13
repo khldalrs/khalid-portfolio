@@ -77,7 +77,7 @@ const Hero = () => {
             </div>
 
             <a
-              href="/public/Khalid Alrais CV.pdf"
+              href="/Khalid Alrais CV.pdf"
               download
               className="flex items-center space-x-2 bg-white text-primary-foreground px-6 py-2 rounded-full hover:bg-[#ffd300] transition-colors"
             >
