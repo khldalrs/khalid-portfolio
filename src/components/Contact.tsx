@@ -42,7 +42,7 @@ const Contact = () => {
                 <span>GitHub</span>
               </a>
               <a
-                href="www.linkedin.com/in/khalidalrais/"
+                href="https://www.linkedin.com/in/khalidalrais/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-4 text-foreground hover:text-primary transition-colors"

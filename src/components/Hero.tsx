@@ -1,5 +1,6 @@
 import { Github, Linkedin, Instagram, Youtube } from "lucide-react";
 import { Download } from "lucide-react";
+import TikTok from "./icons/TikTok";
 
 const Hero = () => {
   return (
@@ -14,14 +15,20 @@ const Hero = () => {
               I'm <span className="text-primary">Khalid</span>,
             </p>
             <p>
-              A <span className="text-primary">Software Engineer</span>
+              A <span className="text-primary">Software Engineer </span>&
+              <span className="text-primary"> Content Creator</span>
             </p>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Software Engineering student at Istanbul Aydin University,
-            graduating in June 2025. Passionate about full-stack development and
-            AI, I've built scalable applications integrating modern web
-            technologies and AI-driven solutions.
+            <span className="font-bold">Software Engineering student</span> at{" "}
+            <span className="font-bold">Istanbul Aydin University</span>,
+            graduating in <span className="font-bold">May 2025</span>. I
+            specialize in{" "}
+            <span className="font-bold">full-stack development</span> and
+            <span className="font-bold"> AI</span>, building scalable
+            applications while sharing technical insights with{" "}
+            <span className="font-bold">35,000+</span> developers, accumulating
+            over <span className="font-bold">2.5M impressions</span>.
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -50,6 +57,7 @@ const Hero = () => {
               >
                 <Instagram className="w-6 h-6" />
               </a>
+
               <a
                 href="https://www.youtube.com/@khalidtechdev0"
                 target="_blank"
@@ -57,6 +65,14 @@ const Hero = () => {
                 className="flex flex-col items-center space-y-2 text-foreground hover:text-primary transition-colors group"
               >
                 <Youtube className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@khalidtechdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center space-y-2 text-foreground hover:text-primary transition-colors group"
+              >
+                <TikTok />
               </a>
             </div>
 

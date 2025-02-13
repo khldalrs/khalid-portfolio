@@ -1,37 +1,32 @@
 const Experience = () => {
   const experiences = [
     {
-      title: "Software Engineering Fellowship",
+      title: "Software Engineering Resident",
       company: "Headstarter",
       date: "Oct 2024 - Present",
-      location: "Remote (New York, USA)",
       points: [
-        "Led machine learning engineering and full-stack projects",
-        "Developed 5+ neural networks in Python",
-        "Implemented fine-tuning hyperparameter tuning",
+        "Built 14+ full-stack, machine learning, and AI-engineering projects in fast-paced software team environments",
+        "Developed applications with Next.js, TypeScript, FastAPI, and LLM APIs (OpenAI, DeepSeek, Llama 3.1) integrating AI services into full-stack applications",
+        "Implemented LLM-chaining, hyperparameter tuning, and fine-tuning on 10+ LLM models, balancing latency and accuracy",
       ],
     },
     {
       title: "Software Engineering Intern",
       company: "ThingLogix",
-      date: "Jul 2024 - Sep 2024",
-      location: "Remote (Dubai, UAE)",
+      date: "Jul 2024 - Oct 2024",
       points: [
-        "Developed an OCR web application using Next.js",
-        "Enhanced document digitization with AWS Gateway",
-        "Delivered project within strict timeline meeting client expectations",
+        "Built an OCR web application with Next.js and Typescript, integrating AWS S3 and API Gateway, to support client document digitization",
+        "Created 10+ PRD and requirement specification documents, ensuring alignment between technical implementation for 5+ clients' needs",
+        "Researched and evaluated 12+ AI tools and AWS services, selecting optimal technologies for 2 major projects, improving system performance and scalability",
       ],
     },
-
     {
-      title: "Software Engineering Intern",
+      title: "Front-end Developer Intern",
       company: "NetOceans",
       date: "Oct 2023 - Jan 2024",
-      location: "Istanbul, Turkey",
       points: [
-        "Designed and deployed 5+ core features",
-        "Implemented RESTful APIs",
-        "Enhanced platform functionality",
+        "Designed and deployed 5+ core features using React, significantly enhancing platform functionality and user experience",
+        "Implemented and tested 3+ RESTful API integrations, improving data exchange efficiency and system reliability",
       ],
     },
   ];

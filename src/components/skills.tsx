@@ -17,38 +17,52 @@ const Skills = () => {
                   "Java",
                   "SQL",
                   "C/C++",
-                ].map((skill) => (
+                ].map((skill, index, array) => (
                   <span key={skill} className="text-muted-foreground">
                     {skill}
+                    {index !== array.length - 1 && (
+                      <span className="ml-4 text-primary">•</span>
+                    )}
                   </span>
                 ))}
               </div>
             </div>
             <div>
-              <h3 className="text-xl mb-4">Software</h3>
+              <h3 className="text-xl mb-4">Libraries/Frameworks</h3>
               <div className="flex flex-wrap gap-4">
                 {[
-                  "AWS",
                   "NextJS",
-                  "React",
-                  "Angular",
+                  "ReactJS",
                   "TailwindCSS",
                   "FastAPI",
                   "Flask",
-                  "Django",
                   "Node.js",
-                  "Express.js",
                   "MongoDB",
                   "PostgreSQL",
-                  "Prisma",
                   "Figma",
-                  "Postman",
-                  "Git",
-                ].map((skill) => (
+                ].map((skill, index, array) => (
                   <span key={skill} className="text-muted-foreground">
                     {skill}
+                    {index !== array.length - 1 && (
+                      <span className="ml-4 text-primary">•</span>
+                    )}
                   </span>
                 ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl mb-4">Developer Tools</h3>
+              <div className="flex flex-wrap gap-4">
+                {["AWS", "Postman", "Git", "Docker", "Vercel", "Jira"].map(
+                  (skill, index, array) => (
+                    <span key={skill} className="text-muted-foreground">
+                      {skill}
+                      {index !== array.length - 1 && (
+                        <span className="ml-4 text-primary">•</span>
+                      )}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           </div>

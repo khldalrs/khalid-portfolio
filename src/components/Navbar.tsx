@@ -55,6 +55,13 @@ const Navbar = () => {
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
           </button>
           <button
+            onClick={() => scrollTo("leadership")}
+            className="text-foreground hover:text-primary transition-colors font-medium relative group text-sm"
+          >
+            Leadership
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
+          </button>
+          <button
             onClick={() => scrollTo("contact")}
             className="text-foreground hover:text-primary transition-colors font-medium relative group text-sm"
           >

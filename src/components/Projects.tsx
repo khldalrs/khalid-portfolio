@@ -1,42 +1,28 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Dev Overflow: Full-stack AI-driven Platform",
-      duration: "Oct 2024 - Present",
-      description:
-        "Developed a full-stack platform using Next.js, MongoDB, Neo4Auth, and TailwindCSS, featuring AI-powered answers, voting systems, and personalized content recommendations.",
+      title: "Dev Overflow",
+      description: "Next.js | MongoDB | TailwindCSS | OpenAI",
+      duration: "",
+      githubLink: "https://github.com/khldalrs/DevFlow",
       points: [
-        "Implemented 10+ interactive features including filtering, question-and-answer functionality, voting systems",
-        "Enhanced user engagement through AI-driven content recommendations and platform optimization",
-        "Integrated a flexible authentication system (Email, Google, GitHub) and AI-driven answer generation using OpenAI for enhanced user interaction",
+        "Developed a full-stack platform using Next.js, MongoDB, NextAuth, and TailwindCSS, featuring AI-powered answers, voting, and personalized content recommendations",
       ],
     },
     {
-      title: "LLM Evaluation Platform",
-      duration: "OCT 2024",
-      description:
-        "Built an evaluation platform for LLM models in addition to Gemini 1.5 Pro evaluation.",
+      title: "US-Bank Churn Prediction",
+      description: "Langchain | Scikit-Learn | Streamlit | Groq",
+      githubLink: "https://github.com/khldalrs/Customer_Churn_Predictor",
       points: [
-        "Designed and implemented a Prisma-backed PostgreSQL database managing 100k+ data points",
-        "Developed a full-stack application using Next.js for the frontend and Express.js/Node.js for the backend, enabling seamless integration and performance optimization",
-      ],
-    },
-    {
-      title: "US-Bank Client Data Analysis",
-      duration: "Nov 2024",
-      description:
-        "Using LLaMA and OpenAI to evaluate accuracy of predicting when banking customers need assistance.",
-      points: [
-        "Created an end-to-end solution complete with sending automated email to customer based on feature engineering, normalization, model training, evaluating and hyperparameter tuning across 5 LLM models",
+        "Used a 30k+ dataset with multiple LLMs (Llama 3.1b, Deepseek, Groq) to evaluate and improve churn prediction accuracy",
       ],
     },
     {
       title: "Financial Analysis & Automation with LLMs",
-      duration: "OCT 2024",
-      description:
-        "Automated financial analysis across 10,000+ stock descriptions using a 16-dimension vector index.",
+      description: "FastAPI | Pinecone | LangChain",
+      githubLink: "https://github.com/khldalrs/Financial-Analysis-Backend",
       points: [
-        "Optimized data processing by parallelizing tasks with 10 concurrent workers, efficiently handling together 100k+ stock tickers overcoming I/O bound latency",
+        "Ran similarity searches across 10k+ stocks using Pinecone, LangChain, and FastAPI for the backend; optimized the data processing by parallelizing tasks with 10+ concurrent workers to speed up the I/O bound",
       ],
     },
   ];
@@ -52,14 +38,19 @@ const Projects = () => {
               className="animate-slide-in border border-muted/20 rounded-lg p-6 hover:border-accent transition-colors"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
-                <span className="text-muted-foreground">
-                  {project.duration}
-                </span>
+                <div className="flex items-center gap-4">
+                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm px-3 py-1 border border-primary text-primary hover:bg-primary hover:text-white rounded-full transition-colors"
+                  >
+                    GitHub
+                  </a>
+                </div>
               </div>
-              <p className="text-muted-foreground mb-4">
-                {project.description}
-              </p>
+              <p className="text-muted-foreground mb-4">{project.description}</p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
                 {project.points.map((point, idx) => (
                   <li key={idx}>{point}</li>
